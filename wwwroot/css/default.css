@@ -30,9 +30,13 @@
 }
 
 #Header .logo-link {
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: bold;
     text-decoration: none;
+}
+
+#Header .logo-link img {
+    width: 2.5vw;
 }
 
 #Header .logo-link:hover {
@@ -142,6 +146,14 @@ a {
     #Header {
         width: 90vw;
         padding: 0 5vw;
+    }
+
+    #Header .logo-link {
+        font-size: 5vw;
+    }
+
+    #Header .logo-link img {
+        width: 4.5vw;
     }
     
     .xTendContentLayoutText {
