@@ -1,0 +1,111 @@
+﻿#DocMan ul {
+    list-type: none;
+    margin-top: 10px;
+}
+
+.folder, .fa {
+    cursor: pointer
+}
+
+#DocMan a {
+    text-decoration: none
+}
+
+    #DocMan a:hover {
+        text-decoration: underline
+    }
+/*#DocMan .folder:hover {text-decoration:underline}*/
+#DocMan .addFolder:hover {
+    text-decoration: underline
+}
+
+#DocMan .fa {
+    margin-right: 10px
+}
+
+#DocMan ul > li ul {
+    display: none
+}
+
+#DocMan .fa-ul li {
+    margin-bottom: 10px
+}
+
+#Sitemap ul {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+#Sitemap a {
+    text-decoration: none;
+}
+
+    #Sitemap a:hover {
+        text-decoration: none;
+    }
+
+#Sitemap > ul {
+    padding-left: 0;
+}
+
+    #Sitemap > ul > li > i {
+        display: none
+    }
+
+#Sitemap i {
+    font-size: 9px
+}
+
+table.XVTable tr td img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.fa:hover {
+    /*	text-shadow: 1px 1px 6px;*/
+}
+
+.GallerySet {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 1px #ccc solid;
+    padding: 2px;
+}
+
+    .GallerySet h5 {
+        margin: 0;
+        padding: 0;
+    }
+
+.fileInfo {
+    font-style: italic;
+    font-size: 10px;
+}
+
+.Dropzone {
+    padding: 3px;
+    margin: 5px 0;
+    border: #ccc 1px dotted;
+}
+
+.Highlighted {
+    background-color: rgba(128,128,128,0.5);
+    border: #ccc 2px dotted;
+}
+
+.xTendContentList {
+    position: relative;
+}
+
+.validateNumber {
+    text-align: right;
+}
+
+img[style*="left"] {
+    margin: 0 20px 20px 0;
+}
+
+img[style*="right"] {
+    margin: 0 0 20px 20px;
+}

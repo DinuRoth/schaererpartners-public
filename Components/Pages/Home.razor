@@ -1,0 +1,52 @@
+﻿@*@page "/"*@
+@page "/home"
+@page "/{*URL:nonfile}"
+@using xTend.Service
+
+@inject IUserDB Database
+@inject NavigationManager NavigationManager
+
+<PageTitle>@_pagetitle</PageTitle>
+
+<style>
+    .LayoutContainer {
+        position: relative;
+        height: 1487px;
+    }
+</style>
+<div class='LayoutContainer'>
+    @if (ObjektListe != null) {
+        @foreach (xTend.xtObjekt objekt in ObjektListe) {
+            @if (objekt is { xtObjektTyp: not null, xtObjektTyp_FK: xtObjektTyp.Picture }) {
+                var style = $"background-image: url(\"{objekt.DocumentPath}/{objekt.Bild}\");";
+                <div class="xTendContentLayoutBild" style=@style>
+                </div>
+            }
+            else if (objekt is { xtObjektTyp: not null, xtObjektTyp_FK: xtObjektTyp.Text }) {
+                <div id=@(objekt.xtObjekt_Bez) class="xTendContentLayoutText">
+                    <XTBeitrag Objekt="@objekt"/>
+                </div>
+            }
+        }
+    }
+</div>
+
+@code {
+
+    [Parameter]
+    public string URL { get; set; }
+
+    private List<xTend.xtObjekt> ObjektListe { get; set; }
+    private string _pagetitle = "";
+
+    protected override void OnParametersSet() {
+        base.OnInitialized();
+
+        ObjektListe = Database.ReadMultipleSavely<xtObjekt>($"{nameof(xtNavigation.xtActivation_FK)} = {xtActivation.On} OR ({nameof(xtNavigation.xtActivation_FK)} = {xtActivation.Timed} AND {nameof(xtNavigation.StartTime)} <= @0 AND {nameof(xtNavigation.EndTime)} >= @0)", DateTime.Now);
+        ObjektListe = ObjektListe
+            .OrderBy(x => x.Reihenfolge)
+            .Where(x => x.xtObjektTyp_FK == xtObjektTyp.Picture || x.xtObjektTyp_FK == xtObjektTyp.Text)
+            .ToList();
+    }
+
+}

@@ -1,0 +1,68 @@
+﻿@using xTend.Service
+@using System.ComponentModel.DataAnnotations
+
+@inherits LayoutComponentBase
+@inject IUserDB Database
+
+<!DOCTYPE html>
+<html lang="de">
+<body>
+<div id="Header">
+    <div class="information">
+        <div id="Logo">
+            <a href="/" class="logo-link">schaerer partners <img src="/images/square.gif" alt="Schaerer & Partners Logo"> treuhand</a>
+        </div>
+
+        <div class="contactingInfo">
+            <div id="Mail">
+                <a href="mailto:info@SchaererPartners.ch">info@SchaererPartners.ch</a>
+            </div>
+
+            <div id="Phone">
+                <a href="tel:+41344226060">+41 (0)34 422 60 60</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mm-toggle-wrap">
+        <div class="mm-toggle">
+            <img src="/images/hamburger_white.png">
+        </div>
+    </div>
+</div>
+
+<div id="mobile-menu">
+    <XTNavigation></XTNavigation>
+</div>
+
+<div id="overlay"></div> <!-- mobile menu -->
+<div id="Inhalt" name="Inhalt">
+    @Body
+</div>
+
+<div id="Brand">
+    webdesign by <a href="http://www.dynabyte.ch" target="_blank">dynabyte</a>
+</div>
+
+<script src="/js/jquery.mobile-menu.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#mobile-menu").mobileMenu({
+            MenuWidth: 350,
+            SlideSpeed: 300,
+            WindowsMaxWidth: 9999,
+            PagePush: true,
+            FromLeft: false,
+            Overlay: true,
+            CollapseMenu: false,
+            ClassName: "mobile-menu"
+        });
+    });
+
+</script>
+</body>
+</html>
+
+@code {
+
+}

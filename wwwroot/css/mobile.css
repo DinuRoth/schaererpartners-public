@@ -1,0 +1,249 @@
+﻿html, body {
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    box-sizing: border-box;
+}
+
+#Header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    width: 100%;
+    top: 24px;
+    margin-right: 10px;
+    gap: 0px;
+}
+
+
+.mm-toggle-wrap {
+    position: relative;
+    display: flex;
+    top: 0 !important;
+    line-height: 1px;
+    background-color: transparent;
+    color: #FFF7AC;
+}
+
+#Navigation {
+    display: none;
+}
+
+    #Navigation > ul {
+        overflow: hidden;
+        display: none;
+    }
+
+#mobile-menu ul {
+    /*display: none*/;
+}
+
+#mobile-menu {
+    background-color: #000;
+    color: #FFF7AC;
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 0px;
+    top: 100px;
+    border-right: 0px solid #000;
+}
+
+.mobile-menu li {
+    border: none;
+    text-align: left;
+    padding-left: 40%;
+}
+
+    .mobile-menu li li {
+        border: none;
+        border-color: black;
+        padding-left: 0px;
+    }
+
+    .mobile-menu li a {
+        color: #FFF7AC;
+        font-size: 16px !important;
+        padding-left: 0px;
+    }
+
+span.expand.icon-plus {
+    border: none;
+    margin-left: 0px;
+    left: 75vw;
+    right: unset;
+}
+
+span.expand.icon-minus.open {
+    border: none;
+    margin-left: 0px;
+    left: 75vw;
+}
+
+.icon-plus:before {
+    content: '\f107' !important;
+    font-family: "FontAwesome";
+    text-decoration: none;
+    color: #FFF7AC !important;
+    border: none;
+    margin-left: 0;
+}
+
+.mobile-menu [class*=" icon-"]:before {
+    content: '\f106';
+    font-family: "FontAwesome";
+    text-decoration: none;
+    color: #FF6109;
+    border: none;
+    border: 0px;
+}
+
+.mobile-menu li li a {
+    background-color: #000;
+}
+
+.mobile-menu ul .expand {
+    background: #000;
+}
+
+a[data-id="19"]::after {
+    display: none;
+}
+
+a[data-id="10"]::after {
+    display: none;
+}
+
+a[data-id="11"]::after {
+    display: none;
+}
+
+#Mail {
+    display: none;
+}
+
+#Documents {
+    display: none;
+    width: 30%;
+}
+
+    #Documents a {
+        display: flex;
+        font-weight: 600;
+        font-size: 14px;
+        color: #FFF7AC;
+        text-decoration: none;
+        text-align: center;
+    }
+
+#Logo {
+    position: relative;
+    width: 200px;
+}
+
+    #Logo img {
+        width: 200px;
+    }
+
+#Left {
+    position: absolute;
+    display: none;
+    font-size: 20pt;
+    top: 70px;
+    left: 0%;
+    width: 70vw;
+}
+
+form {
+    /*display: none;*/
+}
+
+    form table tr {
+        height: 64px;
+    }
+
+    form table td, table:not(.Hoverlist) tbody td {
+        display: block;
+    }
+
+.Hoverlist td {
+    height: 30px;
+}
+
+#mobile_button {
+    display: block;
+    border: none;
+    border-bottom: none !important;
+    background-color: #fff7ac !important;
+    outline: none !important;
+    margin-top: 15px !important;
+    color: #000 !important;
+    width: 200px !important;
+    height: 45px;
+    font-weight: 600 !important;
+    margin-bottom: 10%;
+}
+
+#newsForm {
+    display: none;
+}
+
+#Inhalt {
+    position: relative;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    bottom: 50px;
+    overflow: hidden;
+    background: transparent;
+    font-size: 12px;
+    color: #FFF7AC;
+    height: auto;
+    padding-bottom: 50px;
+    padding-right: 10px;
+}
+
+    #Inhalt p {
+        text-align: left !important;
+    }
+
+.xTendContentLayout LayerClass161 Table {
+    margin-bottom: 30px;
+}
+
+.xTendContentLayout {
+    margin-bottom: 5%
+}
+
+
+h1 em {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10vw;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-style: normal;
+    font-size: 18px;
+    text-align: left !important;
+    width: 100%;
+}
+
+#EventsLayout td {
+    display: inline-block;
+}
+
+#SponsorImages img {
+    margin-bottom: 8%
+}
+
+#SponsorImages {
+    margin-right: unset;
+    text-align: center
+}
+
+div[id^="Reservation"], div[id^="Reservation"] a {
+    float: none !important;
+}

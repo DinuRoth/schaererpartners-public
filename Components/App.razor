@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="description" content="HV">
+    <meta name="generator" content="xTend by dynabyte.ch">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    
+    <link rel="stylesheet" href="css/jquery.mobile-menu.css" />
+    <link rel="stylesheet" href="css/xTend.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    @* <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:800px)" /> *@
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <HeadOutlet />
+
+
+    <title>SchaererPartners</title>
+
+    <meta name="robots" content="index,follow" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="_content/xTendPublic/css/slimbox2.css" >
+        
+    <meta property="og:image" content="Images/Logo.png" />
+    <style>
+        .ui-sortable-handle a {
+            color: #000 !important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <Routes />
+    <script autostart="false" src="_framework/blazor.web.js"></script>
+    <script>
+        Blazor.start({
+            ssr: {
+                disableDomPreservation: true
+            }
+        });
+    </script>
+    <script src="/js/functions.js"></script>
+    @* <script src="//www.google.com/recaptcha/enterprise.js?render=6LfvJyMqAAAAABYKxGRtSiOdN4LpF85rZanPqQma"></script> *@
+</body>
+
+</html>

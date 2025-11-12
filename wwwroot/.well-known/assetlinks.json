@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [ "lookalikes/allowlist" ],
+    "target": {
+      "namespace": "web",
+      "site": "https://xn--schmidechuer-ocb.ch/"
+    }
+  },
+  {
+    "relation": [ "lookalikes/allowlist" ],
+    "target": {
+      "namespace": "web",
+      "site": "https://SchaererPartners.ch/"
+    }
+  }
+]
